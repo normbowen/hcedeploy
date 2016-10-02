@@ -11,6 +11,7 @@ import (
 func handler(w http.ResponseWriter, req *http.Request) {
 	fmt.Printf("%+v\n", req)
 	fmt.Fprintln(w, strings.Join(os.Environ(), "\n"))
+	fmt.PrintF("<p>Modified program</p>")
 	if req.URL.Path == "/crash" {
 		os.Exit(1)
 	}
