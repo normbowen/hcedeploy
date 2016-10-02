@@ -1,5 +1,7 @@
 applications:
 - name: go-env
+host: go-env
+  domain: api.pf.helionstackatodocs.com
   buildpack: https://github.com/cloudfoundry/go-buildpack#v1.7.2
   env:
     GOVERSION: 1.7.2
